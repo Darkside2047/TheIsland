@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Author: William B. Bowens
+		Pleasure Island Project
+	-->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+   <!-- <link rel="stylesheet" href="../styles-grid.css" type="text/css" media="all"> -->
+
+    <style>
+
+body{
+
+background-image: url(media/palmtree3.jpg);
+background-size: cover;
+padding-bottom: 2px;
+top: 0;
+
+}
+
+    
+        header{
+            background-image: url(media/palmtree.jpg);
+	        background-size: cover;
+            padding-bottom: 2px;
+            top: 0;
+        
+         }
+     
+     .concert{
+
+        border-bottom: solid;
+        border-width: 2px;
+     }
+
+
+      #dog{
+
+            float: right;
+
+        }
+
+        @media(min-width: 1184px){
+
+            #dog{
+
+                height: 200px;
+                width: 275px;
+            }
+
+            #fisher{
+                float: right;
+                height: 200px;
+                width: 275px;
+            }
+        }
+
+        @supports (grid-area: auto) {
+            
+            @media(min-width: 1184px){
+                
+                .grid{
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+
+                }
+
+                .concert{
+
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+
+                }
+
+                .series{
+
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+
+                }
+
+                .pet{
+
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+
+                }
+            }
+        }
+
+    </style>
+
+    <title>Activities</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>The Hidden Gems of North Carolina</h1>
+
+    </header>
+
+
+
+    <input id="mobile_menu" type="checkbox">
+
+    <nav>
+        <label for="mobile_menu"></label>
+        <div>
+            <a href="../pleasureisland.html">Home</a>
+            <a href="#">Activies</a>
+            <a href="../history/history.html">History</a>
+            <a href="../tours/visit.html">Visit</a>
+            <a href="../membership/membership.html">Membership</a>
+        </div>			
+    </nav>
+
+
+    
+
+    <main class="grid">
+
+        <article class="concert">
+
+        <h2>Carolina Beach Music Festival</h2>
+        
+
+        <p><img src="media/music.jpg" alt="Image of the beach with people enjoying their time">Why is this annual music event still so important?
+            Now in its 37th year, the Carolina Beach Music Festival brings with it seeds of history that began eight decades ago. Back in the 1940's, 
+            just over the bridge from Carolina Beach, was a community known as Seabreaze, the legendary and rightful birthplace of "beach music"- the genesis of a 
+            sound that transformed the musical soundscape of the south. The community of Seabreaze had establishments better known as "juke joints", airing the harmonious
+            sounds of Bebop, Boogie, Rhythm and Blues, and Swing music- all being played from a jukeboxox. Carolina Beach was a haven for dance halls, better known as "jump joints",
+            during the 40's, playing music that originated from the Seabreeze "juke joints", and a new dance craze was born; "The Shag". Shag is a type of swing dance combining fancy 
+            footwork with upbeat rhythm and blues better known today as "Beach Music".   
+            Whether you come to dance or just sit back and enjoy the live beach music,
+            our event offers something for all. The festival takes place on the beach at the Carolina Beach Boardwalk and is the longest running beach music festival in the United States that is still held on the beach.   
+            Your Pleasure Island Chamber of Commerce invites you and your family to join us on Saturday, June 3, 2023 for the 37th Annual Carolina Beach Music Festival that will draw beach music enthusiasts from across the East Coast to enjoy a day of great music, dancing, sunshine and some of the best eating establishments Carolina Beach and Pleasure Island have to offer.
+         </p> 
+
+        </article>
+
+        <article class="pet">
+
+        <h2>Pets in the Park Celebration</h2>
+    
+        <p><img src="media/dogpark.jpg" id="dog" alt="Image of a dog playing frisby">The Pleasure Island Chamber of Commerce is proud to present
+             the 3rd Annual Pets in the Park on Saturday, October 7, 2023, from 10am-2pm at Carolina Beach Lake Park. This event celebrates pets, their owners, 
+             and pet-centric businesses in Dog-Friendly Carolina Beach. The program will include a Pet Blessing, Dog & Cat Adoption Zone, Pet Costume and Pet Trick contests, "Ask the Vet" booth, puppy kissing booth, dog yoga, pet-centric merchandise and service booths, food trucks, DJ, pet portraits, free face painting, and a K9 Demo. 
+        </p> 
+
+        </article>
+
+
+        <article class="series">
+
+            <h2>Fort Fisher Concert Series</h2>
+        
+            <p><img src="media/concert.jpg" id="fisher" alt="Image of a dog playing frisby">Grab your lawn chairs or blankets and join us for a FREE summer concert on the 2nd and 4th Friday of July, August and September. 
+                The Pleasure Island Chamber of Commerce and the Town of Kure Beach are excited to present the Fort Fisher Summer Concert Series at Fort Fisher Air Force Recreation Area. Soak up the beautiful Fort Fisher sunset as you dance the night away to local artists. Food trucks will be serving some of their favorites for any cravings you may have. 
+                This family-friendly event is FREE to the public.
+            </p> 
+            
+            </article>
+
+
+
+    </main>
+
+
+    <footer>
+
+        <h1>Catch us on social media!</h1>
+
+        <ul class="container">
+            <li><a href="https://www.facebook.com/PleasureIslandChamber" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/pleasureislandchamber/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/picc-chamber-a02aa420b/" target="_blank">LinkedIn</a></li>
+        </ul>
+             
+
+    </footer>
+
+</body>
+
+</html>

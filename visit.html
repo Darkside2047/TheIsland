@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Author: William B. Bowens
+		Pleasure Island Project
+	-->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles-grid.css" type="text/css" media="all">
+
+    <style>
+
+body{
+
+background-image: url(media/palmtree3.jpg);
+background-size: cover;
+padding-bottom: 2px;
+top: 0;
+
+}
+
+        
+        header{
+            background-image: url(media/palmtree.jpg);
+	        background-size: cover;
+            padding-bottom: 2px;
+            top: 0;
+        
+         }
+
+        article.visit{
+
+            border-bottom: solid;
+            border-width: 2px;
+        }
+
+        .fish{
+            height: 425px;
+            width: 575px;
+            padding-right: 15px;
+        }
+
+
+        .size{
+
+            height: 300px;
+            width: 350px;
+            padding: 10px;
+            
+        }
+
+
+        @media(max-width: 865px){
+
+            .size{
+
+                width: 100%;
+            }
+
+            .fish{
+
+                width: 100%;
+            }
+
+        }
+
+
+        @media(min-width: 865px){
+
+            .size{
+
+                height: 200px;
+                width: 215px;
+            }
+
+        }
+
+
+        @media(min-width: 1005px){
+
+            .size{
+
+                height: 200px;
+                width: 265px;
+
+            }
+
+
+        }
+
+
+        @media(min-width: 1184px){
+
+                .size{
+                 height: 200px;
+                 width: 320px;
+
+                }
+              }
+
+              @media(min-width: 1300px){
+
+                .size{
+                 height: 200px;
+                 width: 350px;
+
+                }
+            }
+
+
+
+        /*Grid Style*/
+
+        @supports (grid-area: auto) {
+
+            @media(min-width: 865px){
+
+                .grid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 825px 600px;
+                  
+                }
+
+                .visit{
+                    grid-column: 1/4;
+                    grid-row: 1/2;
+                }
+
+
+                .eat{
+
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+
+
+                }
+
+                .relax{
+
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+
+                .enjoy{
+
+                    grid-column: 3/4;
+                    grid-row: 2/3;
+                }
+               
+        }
+
+
+
+        @media(min-width: 1100px){
+
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                 grid-template-rows: 700px 535px;
+  
+                }
+
+            .visit{
+                grid-column: 1/4;
+                grid-row: 1/2;
+                }
+
+
+                .eat{
+
+                 grid-column: 1/2;
+                 grid-row: 2/3;
+
+
+                }
+
+                .relax{
+
+                 grid-column: 2/3;
+                 grid-row: 2/3;
+                }
+
+                .enjoy{
+
+                 grid-column: 3/4;
+                grid-row: 2/3;
+                }
+
+                }
+
+                @media(min-width: 1300px){
+
+                    .grid{
+                        display: grid;
+                         grid-template-columns: 1fr 1fr 1fr;
+                         grid-template-rows: 575px 535px;
+
+                         }
+
+                        .visit{
+                        grid-column: 1/4;
+                         grid-row: 1/2;
+                            }
+
+
+                        .eat{
+
+                         grid-column: 1/2;
+                         grid-row: 2/3;
+
+
+                         }
+
+                         .relax{
+
+                             grid-column: 2/3;
+                             grid-row: 2/3;
+                         }
+
+                          .enjoy{
+
+                              grid-column: 3/4;
+                              grid-row: 2/3;
+                         }
+
+                         }
+
+                      }
+
+    </style>
+
+
+    <title>visit</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>The Island Experience!</h1>
+
+    </header>
+
+
+
+    <input id="mobile_menu" type="checkbox">
+
+    <nav>
+        <label for="mobile_menu"></label>
+        <div>
+            <a href="../pleasureisland.html">Home</a>
+            <a href="../activities/activities.html">Activies</a>
+            <a href="../history/history.html">History</a>
+            <a href="../tours/visit.html">Visit</a>
+            <a href="../membership/membership.html">Membership</a>
+        </div>					
+    </nav>
+
+
+    
+
+    <main class="grid">
+
+
+        <article class="visit">
+
+        <h2>Be sure to book your next trip with us!</h2>
+        
+
+        <p><img src="media/aquarium.jpg" class="fish" alt="Image of a school of fish">Pleasure Island, encompassing Carolina Beach, Kure Beach and Historic Fort Fisher and home to some of the most unique beach towns and beaches in North Carolina, 
+            is nationally recognized as one of the East Coast's leading sports fishing ports with a wonderfully eclectic mix of colorful beach, harbor and waterway-front vacation homes, Oak lined streets and low country-styled 
+            neighborhoods, plus a lively downtown Business and Arts District combined with a 1950's era Boardwalk and Amusement Park.
+            And did we mention award winning seafood restaurants, ocean and river front camping with your 4x4, hiking and biking trails through five-hundred-year-old Sea Pine forests, North Carolina's largest State Aquarium, 
+            a restored civil war-era Fort, ecologically diverse wetland marshes and, of course, over seven miles of North Carolina's most beautiful beaches with the gentle Atlantic lapping its shore.</p> 
+
+        </article>
+
+
+        <article class="eat">
+
+        <h2>EAT!</h2>
+        
+        <p><img src="media/crabmeat.jpg" class="size" alt="Image of seafood dish">Please be sure to bring your appetites! Pleasure Island offers a wide variety of restaurants whether you are gunning for seafood or want
+        to enjoy exotic quizines!</p> 
+
+        </article>
+
+
+        <article class="relax">
+
+        <h2>Relax!</h2>
+        <p><img src="media/hotel.jpg" class="size" alt="Image of the inside of a luxury hotel">After a long day packed full of exploration and adventure, Pleasure Island offers an endless selection of luxury
+            for you to make yourself at home with us!
+        </article>
+
+
+        <article class="enjoy">
+
+        <h2>Enjoy!</h2>   
+        <p><img src="media/park.jpg" class="size" alt="Image of ab amusement park">Pleasure Island strives to make the experience a memorable one for both our visitors and residents. We have
+        but one mission, and that is for you enjoy and create awesome memories that will last a lifetime!</p> 
+
+        </article>
+
+
+    </main>
+
+
+    <footer>
+
+        <h1>Catch us on social media!</h1>
+
+        <ul class="container">
+            <li><a href="https://www.facebook.com/PleasureIslandChamber" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/pleasureislandchamber/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/picc-chamber-a02aa420b/" target="_blank">LinkedIn</a></li>
+        </ul>
+             
+     
+
+    </footer>
+
+</body>
+
+</html>

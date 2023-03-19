@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Author: William B. Bowens
+		Pleasure Island Project
+	-->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles-grid.css" type="text/css" media="all">
+
+    <style>
+
+        body{
+
+        background-image: url(media/palmtree3.jpg);
+	    background-size: cover;
+        padding-bottom: 2px;
+        top: 0;
+
+        }
+
+    
+        header{
+            background-image: url(media/palmtree.jpg);
+	        background-size: cover;
+            padding-bottom: 2px;
+            top: 0;
+         }
+
+     img{
+
+        height: 400px;
+        width: 500px;
+
+     }
+
+     ul{
+
+        column-count: 1;
+
+     }
+
+
+    article.info{
+
+        border-bottom: solid;
+        border-width: 2px;
+
+        color: black;
+
+     }
+
+     form{
+
+        font-style: italic;
+
+     }
+
+    @supports (grid-area: auto) {
+
+        @media(min-width: 1170px){
+            .grid{
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 575px 1fr;
+
+            }
+
+            .info{
+
+                grid-column: 1/3;
+                grid-row: 1/2;
+
+            }
+
+
+            .form{
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+            }
+
+            .list{
+
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+            }
+
+
+        } 
+
+     }
+
+    </style>
+
+
+
+    <title>Membership</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sign up and Become a Member!</h1>
+
+    </header>
+
+
+
+    <input id="mobile_menu" type="checkbox">
+
+    <nav>
+        <label for="mobile_menu"></label>
+        <div>
+            <a href="../pleasureisland.html">Home</a>
+            <a href="../membership/membership.html">Activies</a>
+            <a href="../history/history.html">History</a>
+            <a href="../tours/visit.html">Visit</a>
+            <a href="../membership/membership.html">Membership</a>
+        </div>			
+    </nav>
+
+
+    <main class="grid">
+
+        <article class="info">
+
+            <h2>Serving a Diverse Range of Local Businesses</h2>
+        
+            <p><img src="media/meeting.jpg" alt="Image of a meeting">The Pleasure Island Chamber of Commerce is proud to have over 200 members today and that number is growing every month. 
+                Our members represent a wide range of businesses serving the communities of Carolina Beach, Kure Beach, Fort Fisher, Monkey Junction, Wilmington, and more. 
+                Search our site for Where to Stay, Where to Play, Where to Eat and explore Local Businesses to find restaurants, shopping, hotels, motels, vacation rentals,
+                 oceanfront condos, golfing, places of interest, and things to do in the area, as well as a multitude of services such as real estate, home building, financial 
+                 planning, mortgage loan officers, photography, design, fitness centers, beauty salons, and boat rentals among many, many others. 
+            </p> 
+
+        </article>
+
+
+        <article class="list">
+
+            <h2>Membership</h2>
+
+            <p>Our mission is to:</p>
+
+            <ul>
+
+                <li>Always serve our Members by actively promoting their businesses.</li>
+                <li>Enhance the economic vitality of southeast North Carolina through focused leadership and responsible 
+                    representation</li>
+                <li>Create a community-wide resource for Members to network, exchange ideas and, ultimately, enhance 
+                    their profitability</li>
+                <li>Serve as Ombudsman for Member businesses in addressing their issues, concerns and needs</li>
+                <li>Help make Pleasure Island, and southeast North Carolina, the best place to Live, Work and Play</li>
+            
+            </ul>
+            
+
+        </article>
+
+
+        <article class="form">
+
+        <form action="../confirmation/confirmation.html">
+         <fieldset>
+             <legend> <h2>
+                 New Member Sign-Up Information
+                 </h2>
+             </legend>
+
+                   First Name:<br/>
+                    <input type="text" name="name" size="30" maxlength="100">
+                
+                <br/>
+                <label>
+                 Last Name:<br/>
+                 <input type="text" name="name" size="30" maxlength="100">
+             </label>
+             <br/>
+             <label>
+                 Email Address:<br/>
+                 <input type="text" name="email" size="30" maxlength="100">
+             </label>
+             <br/>
+             <label>
+                 Phone Number:<br/>
+                 <input type="text" name="phone" size="30" maxlength="100">
+             </label>
+             <br/>
+             <label>
+                 Date of Birth:<br/>
+                 <input type ="date" name="date" size="30">
+             </label>
+             <br/>
+             <br/>
+             
+                Military Veteran?:<br/>
+                <input type="radio" name="status" value="yes">
+                Yes
+                <input type="radio" name="status" value="no">
+                No
+            
+             <br/>
+             <br/>
+             
+                How did you hear about Pleasure Island?:<br/>
+                <select>
+                    <option>TV Commercial</option>
+                    <option>Social Media</option>
+                    <option>Magazine Article</option>
+                </select>
+
+                <br/>
+
+                <input type="button" value="Submit">
+
+         </fieldset>
+
+            
+        </form>
+        </article>
+
+
+    </main>
+
+
+    <footer>
+
+        <h1>Catch us on social media!</h1>
+
+        <ul class="container">
+            <li><a href="https://www.facebook.com/PleasureIslandChamber" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/pleasureislandchamber/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/picc-chamber-a02aa420b/" target="_blank">LinkedIn</a></li>
+        </ul>
+             
+
+    </footer>
+
+</body>
+
+</html>
